@@ -16,7 +16,7 @@ void solve()
 }
 int main()
 {
-  ios_base::sync_with_stdio(false);
+    ios_base::sync_with_stdio(false);
     cin.tie(NULL);
     bool ch = 1;
     if(!ch) solve();
