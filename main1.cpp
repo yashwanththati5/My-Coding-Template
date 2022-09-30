@@ -4,8 +4,8 @@ using namespace std;
 #define ll long long
 #define mod 1000000007
 #define tc int t;cin>>t;while(t--)
-#define max(v) *max_element((v).begin(), (v).end());
-#define min(v) *min_element((v).begin(), (v).end());
+#define maxv(v) *max_element((v).begin(), (v).end());
+#define minv(v) *min_element((v).begin(), (v).end());
 #define print(x) _print(x);
 ll admod(ll a , ll b , int m = 1000000007) {return (a % m + b % m) % m;}
 ll mmod(ll a , ll b , int m = 1000000007) {return (a % m * b % m) % m;}
