@@ -9,8 +9,9 @@ using namespace std;
 #define print(x) _print(x);
 ll amod(ll a , ll b , int m = 1000000007) {return (a % m + b % m) % m;}
 ll mmod(ll a , ll b , int m = 1000000007) {return (a % m * b % m) % m;}
-ll smod(ll a , ll b , int m = 1000000007) {return (a % m - b % m + m) % m;}
-ll dmod(ll a , ll b , int m = 1000000007) {return (a % m * b ^ -1 % m) % m;}
+ll smod(ll a , ll b , int m = 1000000007){return (a % m - b % m + m) % m;}
+ll power(ll a , ll b){ll ans = 1; while(b != 0){if(b & 1){ans = mmod(ans , a);}a = mmod(a , a);b = b >> 1;}return ans;}
+ll dmod(ll a , ll b , int m = 1000000007) {return (a % m * power(b , m - 2)% m) % m;}
 template<class T> void _print(vector<T> v){for(auto i: v){cout<<i<<" ";} nl;}
 template<class T , class V> void _print(map<T , V> m){for(auto p: m){cout<<p.first<<" "<<p.second;nl;}nl;}
 template<class T , class V> void _print(unordered_map<T , V> m){for(auto p: m){cout<<p.first<<" "<<p.second;nl;}nl;}
@@ -18,13 +19,13 @@ template<class T> void _print(set<T> s){for(auto p: s){cout<<p<<" ";}nl;}
 template<class T> void _print(unordered_set<T> s){for(auto p: s){cout<<p<<" ";}nl;}
 template<class T , class V> void _print(pair<T , V> p){for(auto x: p){cout<<x.first<<" "<<x.second; nl;}nl;}
 //------- Options -----//
-bool ch = 1, cmp = 0;
+bool ch = 0, cmp = 1;
 //---------------------//
 
 void solve()
 {
   
-  nl;
+   nl;
 }
 
 //---------------*******MAIN*******------------//
