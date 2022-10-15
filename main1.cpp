@@ -28,7 +28,7 @@ void solve()
 }
 
 //---------------*******MAIN*******------------//
-int main()
+signed main()
 {
   ios_base::sync_with_stdio(false);
   cin.tie(NULL);
