@@ -19,7 +19,7 @@ template<class T> void _print(set<T> s){for(auto p: s){cout<<p<<" ";}nl;}
 template<class T> void _print(unordered_set<T> s){for(auto p: s){cout<<p<<" ";}nl;}
 template<class T , class V> void _print(pair<T , V> p){for(auto x: p){cout<<x.first<<" "<<x.second; nl;}nl;}
 //------- Options -----//
-bool ch = 1, cmp = 0;
+bool ch = 1, comp = 0;
 //---------------------//
 void solve()
 {
@@ -33,7 +33,7 @@ signed main()
   ios_base::sync_with_stdio(false);
   cin.tie(NULL);
   cout.tie(NULL);
-  if(cmp) {freopen("input.txt" , "r" , stdin); freopen("output.txt" , "w" , stdout);}
+  if(comp) {freopen("input.txt" , "r" , stdin); freopen("output.txt" , "w" , stdout);}
   if(!ch) solve();
   else {tc {solve();}}
       return 0;
