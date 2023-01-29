@@ -7,10 +7,12 @@ using namespace std;
 #define maxv(v) *max_element((v).begin(), (v).end());
 #define minv(v) *min_element((v).begin(), (v).end());
 #define print(x) _print(x);
+int xdir[8] = {-1,0,0,1,-1,-1,1,1};
+int ydir[8] = {0,1,-1,0,-1,1,-1,1};
 ll amod(ll a , ll b , int m = 1000000007) {return (a % m + b % m) % m;}
 ll mmod(ll a , ll b , int m = 1000000007) {return (a % m * b % m) % m;}
 ll smod(ll a , ll b , int m = 1000000007){return (a % m - b % m + m) % m;}
-ll power(ll a , ll b){ll ans = 1; while(b != 0){if(b & 1){ans = mmod(ans , a);}a = mmod(a , a);b = b >> 1;}return ans;}
+ll power(ll a , ll b , int m = 1000000007){ll ans = 1; while(b != 0){if(b & 1){ans = mmod(ans , a , m);}a = mmod(a , a , m);b = b >> 1;}return ans;}
 ll dmod(ll a , ll b , int m = 1000000007) {return (mmod(a, power(b, m - 2)) + m) % m;}
 template<class T> void _print(vector<T> v){for(auto i: v){cout<<i<<" ";} nl;}
 template<class T , class V> void _print(map<T , V> m){for(auto p: m){cout<<p.first<<" "<<p.second;nl;}nl;}
@@ -23,8 +25,8 @@ bool ch = 1, comp = 0;
 //---------------------//
 void solve()
 {
-  
-  if(ch) nl;
+    
+    if(ch) nl;
 }
 
 //---------------*******MAIN*******------------//
